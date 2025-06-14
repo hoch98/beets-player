@@ -118,7 +118,8 @@ function renderHomepage() {
                 pages["playscreen"]()
             }
         })
-    }).catch(() => {
+    }).catch((error) => {
+        console.log(error)
         alert("Error getting songs, perhaps the base URL is invalid?")
     })
 }
